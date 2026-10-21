@@ -28,3 +28,123 @@ Ejercicio 08 · La letra
   - El mismo <link> de Google Fonts que en index.html.
 ============================================================
 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puestos de la Plaza</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Sabores de la Plaza</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="puestos.html">Puestos</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <main class="container py-5">
+    <div class="row g-4">
+      <aside class="col-12 col-lg-3">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">Frutas</a>
+          <a href="#" class="list-group-item list-group-item-action">Panadería</a>
+          <a href="#" class="list-group-item list-group-item-action">Almuerzos</a>
+          <a href="#" class="list-group-item list-group-item-action">Jugos</a>
+          <a href="#" class="list-group-item list-group-item-action">Café</a>
+        </div>
+      </aside>
+
+      <div class="col-12 col-lg-9">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+            <div class="col-12 col-md-6 col-xl-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h2 class="card-title h5">Frutas de temporada</h2>
+                <span class="badge text-bg-success">Nuevo</span>
+                <p class="card-text">Mango, papaya y lulo, recogidos esa mañana.</p>
+                <a href="contacto.html" class="btn btn-success btn-sm">Pedir</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h2 class="card-title h5">Pan artesanal</h2>
+                  <span class="badge text-bg-warning">Popular</span>
+                <p class="card-text">Pan de masa madre horneado cada mañana.</p>
+                <a href="contacto.html" class="btn btn-success btn-sm">Pedir</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                  <span class="badge text-bg-info">Sin conservantes</span>
+                <h2 class="card-title h5">Almuerzo del día</h2>
+                <p class="card-text">Sopa, seco y jugo natural.</p>
+                <a href="contacto.html" class="btn btn-success btn-sm">Pedir</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card h-100 shadow-sm">
+                <span class="badge text-bg-primary">Natural</span>
+              <div class="card-body">
+                <h2 class="card-title h5">Jugo de lulo</h2>
+                <p class="card-text">Natural, sin azúcar agregada.</p>
+                <a href="contacto.html" class="btn btn-success btn-sm">Pedir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="mt-5">
+  <h2 class="h4 mb-3">Lista de precios</h2>
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Producto</th>
+          <th scope="col">Puesto</th>
+          <th scope="col">Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mango (kilo)</td>
+          <td>Frutas</td>
+          <td>$5.000</td>
+        </tr>
+        <tr>
+          <td>Pan de masa madre</td>
+          <td>Panadería</td>
+          <td>$3.500</td>
+        </tr>
+        <tr>
+          <td>Almuerzo del día</td>
+          <td>Almuerzos</td>
+          <td>$14.000</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
