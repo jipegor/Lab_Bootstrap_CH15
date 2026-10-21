@@ -26,68 +26,75 @@ Ejercicio 07 · Más componentes de la documentación
 Ejercicio 08 · La letra
   - El mismo <link> de Google Fonts que en index.html.
 ============================================================
--->
-<!DOCTYPE html>
+--><!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto de la Plaza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">Sabores de la Plaza</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="menuPrincipal">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="puestos.html">Puestos</a></li>
-        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-      </ul>
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Sabores de la Plaza</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="puestos.html">Puestos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+
+  <main class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        <h1 class="h3 mb-4 text-center">Haz tu pedido</h1>
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="correo" required>
+          </div>
+          <div class="mb-3">
+            <label for="puesto" class="form-label">Puesto</label>
+            <select class="form-select" id="puesto" required>
+              <option value="" selected disabled>Elige un puesto</option>
+              <option value="frutas">Frutas</option>
+              <option value="panaderia">Panadería</option>
+              <option value="almuerzos">Almuerzos</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-success">Enviar pedido</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-0">Sabores de la Plaza · Plaza de mercado · Contacto: 300 000 0000</p>
+    </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
-<main class="container py-5">
-  <div class="row justify-content-center">
-    <div class="col-12 col-md-8 col-lg-6">
-      <h1 class="h3 mb-4 text-center">Haz tu pedido</h1>
-      <form>
-        <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="nombre" required>
-        </div>
-        <div class="mb-3">
-          <label for="correo" class="form-label">Correo</label>
-          <input type="email" class="form-control" id="correo" required>
-        </div>
-        <div class="mb-3">
-          <label for="puesto" class="form-label">Puesto</label>
-          <select class="form-select" id="puesto" required>
-            <option value="" selected disabled>Elige un puesto</option>
-            <option value="frutas">Frutas</option>
-            <option value="panaderia">Panadería</option>
-            <option value="almuerzos">Almuerzos</option>
-          </select>
-        </div>
-        <div class="mb-3">
-          <label for="mensaje" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="mensaje" rows="3"></textarea>
-        </div>
-        <div class="d-grid">
-          <button type="submit" class="btn btn-success">Enviar pedido</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</main>
 </html>
